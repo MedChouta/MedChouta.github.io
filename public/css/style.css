@@ -1,0 +1,158 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 10;
+}
+
+header{
+    background-color: rgb(10, 10, 10);
+    background-image: url("../img/cover.jpg");
+    background-origin: padding-box, content-box;
+    background-size: cover;
+    background-position-x: center;
+    height: 480px;
+}
+
+.name{
+    font-family: "VT323";
+    font-size: 4em;
+    color: black;
+    text-align: center;
+}
+
+.block{
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    background-color: black;
+}
+
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 200px;
+    padding-bottom: 100px;
+}
+
+.profil_pic{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2em;
+    padding-bottom: 210px;
+    height: 100%;
+}
+
+#me{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 10px;
+}
+
+article{
+
+    text-align: center;
+}
+
+#gitImg:hover{
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px;
+}
+
+li{
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+.card:first-of-type{
+    margin-top: 150px;
+}
+
+.card{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    grid-gap: 20px;
+    width: 70%;
+    margin: auto;
+    justify-items: center;
+}
+
+.contactContainer{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px solid rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10%;
+    font-family: Arial;
+    font-size: 1.2em;
+}
+
+.contact:hover{
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+}
+
+.modal-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.love{
+    background-color: rgb(50, 50, 50);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-family: "Ubuntu";
+}
+
+footer{
+    background-image: url(../img/cover_contact.jpg);
+    background-origin: padding-box, content-box;
+    background-size: cover;
+    background-position-x: center;
+
+    height: 950px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    footer{
+        height: 750px;
+    }
+
+    .contact{
+        margin-left: 25px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .name{
+        font-size: 3em;
+    }
+}
