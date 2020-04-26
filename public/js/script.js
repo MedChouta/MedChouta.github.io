@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $('[data-toggle="popover"]').popover()
     $('[data-toggle="tooltip"]').tooltip()
-    writeName("Mohammed Chouta")
+    setTimeout(writeName("Mohammed Chouta"), 1500)
 })
 
 var i = 0;
