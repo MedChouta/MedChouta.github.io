@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    writeName("Mohammed Chouta")
     AOS.init({
     duration: 1000,
     once: true
@@ -7,6 +6,7 @@ $(document).ready(function() {
 
     $('[data-toggle="popover"]').popover()
     $('[data-toggle="tooltip"]').tooltip()
+    writeName("Mohammed Chouta")
 })
 
 var i = 0;
